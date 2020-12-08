@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Demo As Alert Message</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/as-alert-message.min.css">
+</head>
+<body>
+	
+	<div class="row content-centered">
+		<div class="col-as-8 text-center" style="margin-top:120px;">
+			<h1 class="t-blue border-bottom border-blue border-2">AsAlertMessage Examples</h1>
+			
+			<h3>AsAlertMessage Without Button</h3>
+			<button type="button" id="default" class="as-btn as-btn-sm as-btn-block">As Alert Default</button>
+			<button type="button" id="error" class="as-btn as-btn-sm as-btn-block as-btn-red">As Alert Error</button>
+			<button type="button" id="warning" class="as-btn as-btn-sm as-btn-block as-btn-orange">As Alert Warning</button>
+			<button type="button" id="success" class="as-btn as-btn-sm as-btn-block as-btn-green">As Alert Success</button>
+
+			<h3 class="border-top">AsAlertMessage With Close Button</h3>
+			<button type="button" id="btn-default" class="as-btn as-btn-sm as-btn-block">As Alert Default</button>
+			<button type="button" id="btn-error" class="as-btn as-btn-sm as-btn-block as-btn-red">As Alert Error</button>
+			<button type="button" id="btn-warning" class="as-btn as-btn-sm as-btn-block as-btn-orange">As Alert Warning</button>
+			<button type="button" id="btn-success" class="as-btn as-btn-sm as-btn-block as-btn-green">As Alert Success</button>
+
+			<div class="text-center" style="margin-top:30px;">
+				<a href="." class="as-btn as-btn-black">< See more example</a>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="js/as-alert-message.min.js"></script>
+	<script>
+		window.onload = function (evt) {	
+			var as_alert_default,as_alert_error,
+				as_alert_warning,as_alert_success,
+				btn_as_alert_default,btn_as_alert_error,
+				btn_as_alert_warning,btn_as_alert_success;
+
+			as_alert_default = document.getElementById('default');
+			as_alert_error = document.getElementById('error');
+			as_alert_warning = document.getElementById('warning');
+			as_alert_success = document.getElementById('success');
+			// ----------------------------------------------------------
+			btn_as_alert_default = document.getElementById('btn-default');
+			btn_as_alert_error = document.getElementById('btn-error');
+			btn_as_alert_warning = document.getElementById('btn-warning');
+			btn_as_alert_success = document.getElementById('btn-success');
+
+
+			/*
+			* Start AsAlertMessage Without Close Button ***
+			*/ 
+			// default
+				as_alert_default.addEventListener('click', () => {
+					asAlertMsg('hey test text');
+				});
+
+				// error
+				as_alert_error.addEventListener('click', () => {
+					asAlertMsg({
+						"type": "error"
+					});
+				});
+
+				// warning
+				as_alert_warning.addEventListener('click', () => {
+					asAlertMsg({
+						"type": "warning"
+					});
+				});
+
+				// success
+				as_alert_success.addEventListener('click', () => {
+					asAlertMsg({
+						"type": "success"
+					});
+				});
+			/*
+			* End AsAlertMessage Without Close Button ***
+			*/ 
+
+
+			/*
+			* Start AsAlertMessage With Close Button ***
+			*/ 
+			// default
+				btn_as_alert_default.addEventListener('click', () => {
+					asAlertMsg({
+						"type": "default",
+						"title": "This is title message",
+						"message": "This is text your message",
+						"button": {}
+					});
+				});
+
+				// error
+				btn_as_alert_error.addEventListener('click', () => {
+					asAlertMsg({
+						"type": "error",
+						"title": "This is title message",
+						"message": "This is text your message",
+						"button": {}
+					});
+				});
+
+				// warning
+				btn_as_alert_warning.addEventListener('click', () => {
+					asAlertMsg({
+						"type": "warning",
+						"title": "This is title message",
+						"message": "This is text your message",
+						"button": {}
+					});
+				});
+
+				// success
+				btn_as_alert_success.addEventListener('click', () => {
+					asAlertMsg({
+						"type": "success",
+						"title": "This is title message",
+						"message": "This is text your message",
+						"timer": 500,
+						"success": {
+							"redirect": ["https://app.isfidev.net"]
+						}
+					});
+				});
+			/*
+			* End AsAlertMessage With Close Button ***
+			*/ 
+		}
+	</script>
+</body>
+</html>
