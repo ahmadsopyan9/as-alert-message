@@ -21,6 +21,7 @@ asAlertMsg("hey test text");
 #### Alert automatically close
 ```html
 asAlertMsg({
+  "type": "success",
   "title": "Title message",
   "message": "Text message"
 });
@@ -29,6 +30,7 @@ asAlertMsg({
 #### Alert with button to close
 ```html
 asAlertMsg({
+  "type": "success",
   "title": "Title message",
   "message": "Text message",
   "button": {
