@@ -21,21 +21,21 @@ asAlertMsg("hey test text");
 #### Alert automatically close
 ```html
 asAlertMsg({
-  "type": "success",
-  "title": "Title message",
-  "message": "Text message"
+  type: "success",
+  title: "Title message",
+  message: "Text message"
 });
 ```
 
 #### Alert with button to close
 ```html
 asAlertMsg({
-  "type": "success",
-  "title": "Title message",
-  "message": "Text message",
-  "button": {
-  	"title": "Title Button",
-  	"bg": "success"
+  type: "success",
+  title: "Title message",
+  message: "Text message",
+  button: {
+  	title: "Title Button",
+  	bg: "success"
   }
 });
 //for button
@@ -46,15 +46,15 @@ asAlertMsg({
 #### Alert with button to redirect
 ```html
 asAlertMsg({
-  "type": "success",
-  "title": "Title message",
-  "message": "Text message",
-  "button": {
-  	"title": "Title Button",
-  	"bg": "success"
+  type: "success",
+  title: "Title message",
+  message: "Text message",
+  button: {
+  	title: "Title Button",
+  	bg: "success"
   },
-  "success": {
-	"redirect": ["https://google.com"]
+  success: {
+	redirect: ["https://google.com"]
   }
 });
 ```
@@ -62,12 +62,12 @@ asAlertMsg({
 #### Alert with automatically redirect
 ```html
 asAlertMsg({
-  "type": "success",
-  "title": "Title message",
-  "message": "Text message",
-  "timer": 1000,
-  "success": {
-	"redirect": ["https://google.com"]
+  type: "success",
+  title: "Title message",
+  message: "Text message",
+  timer: 1000,
+  success: {
+	redirect: ["https://google.com"]
   }
 });
 //for this timer parameter the optional
@@ -76,5 +76,5 @@ asAlertMsg({
 
 #### If you want to redirect to a new tab, add "_blank" to the redirect parameter value, like this 
 ```html
-"redirect": ["https://google.com","_blank"]
+redirect: ["https://google.com","_blank"]
 ```
