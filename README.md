@@ -9,6 +9,9 @@
 ```html
 <link href="css/as-alert-message.min.css" rel="stylesheet">
 <script src="js/as-alert-message.min.js"></script>
+//or using cdn
+<link href="https://cdn.isfidev.net/asalertmessage/v1.0/css/as-alert-message.min.css" rel="stylesheet">
+<script src="https://cdn.isfidev.net/asalertmessage/v1.0/js/as-alert-message.min.js"></script>
 ```
 
 ## Example Code
