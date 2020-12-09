@@ -14,12 +14,12 @@
 ## Example Code
 
 #### Create Basic Alert
-```html
+```javascript
 asAlertMsg("hey test text");
 ```
 
 #### Alert automatically close
-```html
+```javascript
 asAlertMsg({
   type: "success",
   title: "Title message",
@@ -28,7 +28,7 @@ asAlertMsg({
 ```
 
 #### Alert with button to close
-```html
+```javascript
 asAlertMsg({
   type: "success",
   title: "Title message",
@@ -44,7 +44,7 @@ asAlertMsg({
 ```
 
 #### Alert with button to redirect
-```html
+```javascript
 asAlertMsg({
   type: "success",
   title: "Title message",
@@ -60,7 +60,7 @@ asAlertMsg({
 ```
 
 #### Alert with automatically redirect
-```html
+```javascript
 asAlertMsg({
   type: "success",
   title: "Title message",
@@ -75,6 +75,6 @@ asAlertMsg({
 ```
 
 #### If you want to redirect to a new tab, add "_blank" to the redirect parameter value, like this 
-```html
+```javascript
 redirect: ["https://google.com","_blank"]
 ```
