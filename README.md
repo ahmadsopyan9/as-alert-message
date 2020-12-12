@@ -37,7 +37,7 @@ asAlertMsg({
   title: "Title message",
   message: "Text message",
   button: {
-  	title: "Title Button",
+  	text: "Title Button",
   	bg: "success"
   }
 });
@@ -53,7 +53,7 @@ asAlertMsg({
   title: "Title message",
   message: "Text message",
   button: {
-  	title: "Title Button",
+  	text: "Title Button",
   	bg: "success"
   },
   success: {
