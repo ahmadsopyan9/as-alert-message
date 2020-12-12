@@ -43,7 +43,7 @@ asAlertMsg({
 });
 //for button
 //default {}
-//title & bg, is optional
+//text & bg, is optional
 ```
 
 #### Alert with button to redirect
