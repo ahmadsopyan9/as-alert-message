@@ -1,7 +1,7 @@
 # as-alert-message
  AsAlertMessage is a simple, sweet, customizable, animated modal plugin used to replace the default alert / prompt / confirm dialog boxes. AsAlertMessage is independent of jquery
  
-<a href="https://plugin.isfidev.net/asalertmessage/demo.html" target="_blank"> See Demo Here</a>
+<a href="https://plugin.isfidev.com/asalertmessage/demo.html" target="_blank"> See Demo Here</a>
 
 <img src="https://raw.githubusercontent.com/ahmadsopyan9/as-alert-message/main/screenshot.png">
 
